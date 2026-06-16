@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Jibon",
+  "description": "An emergency response and blood donation companion app with active SOS trigger systems, blood bank finders, interactive healthcare mapping, medical profiles, and an AI support assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
