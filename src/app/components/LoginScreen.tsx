@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import { JibonSetuLogo } from "./figma/JibonSetuLogo";
 
 interface Props {
   onLoginSuccess: () => void;
@@ -48,40 +49,8 @@ export function LoginScreen({ onLoginSuccess }: Props) {
       </div>
 
       {/* Top Brand Block */}
-      <div className="flex flex-col items-center text-center mt-6 z-10 px-6 shrink-0 mb-10">
-        {/* Heartbeat pulse icon */}
-        <div className="size-16 mb-2 flex items-center justify-center bg-white/10 rounded-full backdrop-blur-sm shadow-inner">
-          <svg
-            width="44"
-            height="44"
-            viewBox="0 0 100 100"
-            fill="none"
-            stroke="white"
-            strokeWidth="6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M 15 50 L 32 50 L 40 25 L 48 75 L 53 40 L 59 50 L 85 50" />
-          </svg>
-        </div>
-
-        {/* Title in Bengali */}
-        <h1
-          className="text-white text-[38px] font-black tracking-tight leading-none mb-1 text-center font-sans"
-          style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}
-        >
-          জীবন সেতু
-        </h1>
-        
-        {/* English Brand name */}
-        <p className="text-white text-[11px] font-bold tracking-[0.25em] uppercase opacity-90 mb-2">
-          Jibon Setu
-        </p>
-
-        {/* Tagline Bengali */}
-        <p className="text-white/95 text-[15px] font-semibold tracking-normal">
-          জরুরি সেবার নতুন সেতু
-        </p>
+      <div className="flex flex-col items-center text-center mt-6 z-10 px-6 shrink-0 mb-10 w-full">
+        <JibonSetuLogo className="w-48 h-auto" />
       </div>
 
       {/* Lower Sheet / Form Container */}
